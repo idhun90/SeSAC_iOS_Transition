@@ -121,7 +121,7 @@
                                     <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="K29-Fg-iK6" kind="presentation" modalPresentationStyle="overFullScreen" id="C1k-by-jhs"/>
+                                    <segue destination="K29-Fg-iK6" kind="presentation" id="C1k-by-jhs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -171,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdV-0s-ga0">
-                                <rect key="frame" x="30" y="74" width="354" height="758"/>
+                                <rect key="frame" x="30" y="118" width="354" height="665"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJQ-tJ-TDK">
                                         <rect key="frame" x="107" y="343" width="140" height="73"/>
@@ -210,7 +210,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVz-AG-jSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="70p-3H-8B8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="858"/>
+            <point key="canvasLocation" x="2359" y="861"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="dbC-qU-bNH">
@@ -253,7 +253,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="C1k-by-jhs"/>
+        <segue reference="Nah-tY-pqr"/>
         <segue reference="LC9-CG-LwX"/>
     </inferredMetricsTieBreakers>
     <resources>
