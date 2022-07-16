@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lp9-Yg-fSV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HYb-8i-vDM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -62,11 +62,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SAZ-1d-NVM"/>
+                    <navigationItem key="navigationItem" id="SAZ-1d-NVM">
+                        <barButtonItem key="backBarButtonItem" title="첫 번째 화면" id="sDj-Ws-wux"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="128.57142857142856"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="128.57142857142856"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="1te-1x-Mpu">
@@ -84,7 +86,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXg-GA-eo2">
-                                <rect key="frame" x="137" y="412" width="140" height="73"/>
+                                <rect key="frame" x="137" y="291" width="140" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="이전 화면 이동">
@@ -96,16 +98,69 @@
                                     <segue destination="Me7-MC-uAg" kind="unwind" unwindAction="unwindWithSegue:" id="hid-xe-Xto"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV8-i6-uyz">
+                                <rect key="frame" x="137" y="386" width="140" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="팝업 화면 이동" subtitle="Show" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="18"/>
+                                    <fontDescription key="subtitleFontDescription" type="system" weight="black" pointSize="18"/>
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="K29-Fg-iK6" kind="show" id="Nah-tY-pqr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwG-ex-qfb">
+                                <rect key="frame" x="137" y="478" width="140" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="팝업 화면 이동" subtitle="Modal" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="18"/>
+                                    <fontDescription key="subtitleFontDescription" type="system" weight="black" pointSize="18"/>
+                                    <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="K29-Fg-iK6" kind="presentation" modalPresentationStyle="overFullScreen" id="C1k-by-jhs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xeR-vD-mgJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ei2-XE-sM3"/>
+                    <navigationItem key="navigationItem" id="ei2-XE-sM3">
+                        <barButtonItem key="backBarButtonItem" title="두 번째 화면" id="ik3-vu-8vf"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKs-UW-Ukr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Me7-MC-uAg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1839.1304347826087" y="128.57142857142856"/>
+            <point key="canvasLocation" x="2749.275362318841" y="128.57142857142856"/>
+        </scene>
+        <!--새로운 화면-->
+        <scene sceneID="zxJ-Tx-fP3">
+            <objects>
+                <viewController id="5Il-fh-EPI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PBT-Kz-Ykn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="새로운 화면" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPK-mz-S4x">
+                                <rect key="frame" x="144" y="73" width="126" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r8G-mQ-vdM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="새로운 화면" image="rectangle.inset.filled" catalog="system" id="1o9-mi-jul"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRS-Ic-NZQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="848"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="sjq-XU-b1Q">
@@ -155,16 +210,18 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVz-AG-jSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="70p-3H-8B8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="816"/>
+            <point key="canvasLocation" x="2374" y="858"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation-->
         <scene sceneID="dbC-qU-bNH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lp9-Yg-fSV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Navigation" image="rectangle.lefthalf.inset.filled.arrow.left" catalog="system" id="an0-om-uzG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i6C-lL-nXH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemIndigoColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -173,13 +230,35 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Niu-zm-YDy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="267" y="129"/>
+            <point key="canvasLocation" x="1176.8115942028987" y="128.57142857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="o7z-Jd-qDD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HYb-8i-vDM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="atH-XL-jmH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="selectedImageTintColor" systemColor="systemIndigoColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lp9-Yg-fSV" kind="relationship" relationship="viewControllers" id="KzS-3B-v0J"/>
+                        <segue destination="5Il-fh-EPI" kind="relationship" relationship="viewControllers" id="aXw-27-FLV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9f-nB-HVE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="129"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="C1k-by-jhs"/>
         <segue reference="LC9-CG-LwX"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="rectangle.inset.filled" catalog="system" width="128" height="93"/>
+        <image name="rectangle.lefthalf.inset.filled.arrow.left" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
